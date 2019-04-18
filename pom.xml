@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.4.RELEASE</version>
+		<version>2.0.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bolu.rs</groupId>
-	<artifactId>FlightBooking_SpringBoot</artifactId>
+	<groupId>com.infosys.irs</groupId>
+	<artifactId>InfyGoBoot_SpringDataJPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>FlightBooking_SpringBoot</name>
-	<description>Demo project for Spring Boot</description>
+	<name>InfyGoBoot_SpringDataJPA</name>
+	<description>Implementing service layer with Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,9 +21,14 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
